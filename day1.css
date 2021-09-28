@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", "sans-serif";
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* nav */
+
+.navbar {
+    /* can giua */
+    width: 90%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    /* background: rgb(23, 226, 182); */
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container h2 {
+    color: rgb(29, 29, 29);
+    font-weight: 900;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav-container .nav {
+    margin: 0 20px;
+    color: black;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.nav-container .nav .active {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* header */
+
+.header {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container img {
+    width: 100%;
+}
+
+.container div h3 {
+    font-size: 70px;
+}
+
+.container div h3::after {
+    content: "";
+    position: absolute;
+    background: red;
+    height: 5px;
+    width: 150px;
+    top: 47%;
+    left: 10%;
+}
+
+.container div p {
+    margin: 40px 0;
+    line-height: 1.5rem;
+}
+
+.container div a {
+    padding: 15px;
+    background: #333;
+    margin: 10px 0;
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.headphone {
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    /* do mo */
+    opacity: .1;
+    /* do noi len  */
+    z-index: -1;
+}
+
+/* footer */
+.footer { 
+    margin: 100px 0 0 0 ;
+    background: #333;
+    padding: 100px 100px;
+}
+.main-container { 
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 20px 30px;
+}
+.main-container div h4 {
+    color: rgb(41, 100, 177);
+    font-size: 25px;
+    margin: 10px 0;
+}
+.main-container div li { 
+    cursor: pointer;
+    margin: 3px 0;
+    color: #e7e7e7;
+}
+hr{
+    margin: 20px 0;
+    opacity: .4;
+  }
+.headphone2 { 
+    position: absolute;
+    top: 60%;
+    right: 25%;
+    opacity: .1;
+    z-index: -1;
+}
